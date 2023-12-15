@@ -15,35 +15,71 @@
             <h3 style="font-size: 1.2rem;font-weight: normal;">Okkult vegyesbolt, átok kiskereskedés</h3>
             <div id="menu">
                 <button class="menu-item menu-active">Főoldal</button>
-                <button class="menu-item"><a href="shop.html">Bolt</a></button>
-                <button class="menu-item"><a href="seance.html">Szeánsz</a></button>
-                <button class="menu-item"><a href="divination.html">Jóslat</a></button>
-                <button class="menu-item"><a href="colleagues.html">Munkatársak</a></button>
+                <button class="menu-item" onclick="clickShop()">Bolt</button>
+                <button class="menu-item" onclick="clickSeance()">Szeánsz</button>
+                <button class="menu-item" onclick="clickDivination()">Jóslat</button>
+                <button class="menu-item" onclick="clickColleagues()">Munkatársak</button>
             </div>
         </div>
         <div id="main">
             <div id="main-content">
                 <div class="main-container main-whole">
                     <h2>Rólunk</h2>
-                    <div>Vinum regnum, rex vinorum.VVinum regnum, rex vinorum.inum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</div>
+                    <span>Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</span>
+                    <img class="about-image" src="resources/products/divination.jpg" alt="">
+                    <span>Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</span>
+                    <p>Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.VVinum regnum, rex vinorum.inum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum. Vinum regnum, rex vinorum.</p>
                 </div>
-                <div class="main-container main-left">
+                <div class="main-container main-half">
                     <h2>Bestsellerek</h2>
-                    <div>Vinum regnum, rex vinorum.VVinum regnum, rex vinorum.inum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</div>
-                    <div>Vinum regnum, rex vinorum.VVinum regnum, rex vinorum.inum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</div>
-                    <div>Vinum regnum, rex vinorum.VVinum regnum, rex vinorum.inum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</div>
-                    <div>Vinum regnum, rex vinorum.VVinum regnum, rex vinorum.inum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</div>
+                    <div id="product-container">
+                        <div class="product-card">
+                            <div><img class="product-image" src="resources/products/divination.jpg" alt=""></div>
+                            <div class="product-name">Prófécia</div>
+                            <div class="product-desc"><div>Pontos és fontos jóslatok a legjobb médiumoktól.</div></div>
+                        </div>
+                        <div class="product-card">
+                            <div><img class="product-image" src="resources/products/divination.jpg" alt=""></div>
+                            <div class="product-name">Kis rontás</div>
+                            <div class="product-desc"><div>Célzott alacsony hatásfokú rontás, hogy ellenségeit balszerencse sújtsa.</div></div>
+                        </div>
+                        <div class="product-card">
+                            <div><img class="product-image" src="resources/products/divination.jpg" alt=""></div>
+                            <div class="product-name">Áldás</div>
+                            <div class="product-desc"><div>Célzott áldás küldése, hogy szeretteinek a jövőben jó szerencséje legyen.</div></div>
+                        </div>
+                    </div>
+                   
                 </div>
-                <div class="main-container main-right">
+                <div class="main-container main-half">
                     <h2>Vélemények</h2>
-                    <div>Vinum regnum, rex vinorum.VVinum regnum, rex vinorum.inum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</div>
-                    <div>Vinum regnum, rex vinorum.VVinum regnum, rex vinorum.inum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</div>
+                    <div class="comment">
+                        <div class="comment-image"><img class="profile-image" src="resources/products/divination.jpg" alt=""></div>
+                        <div class="comment-content">
+                            <div class="commenter-name">Kiss Aranka</div>
+                            <div class="comment-text">Meggyógyult a kisunokám az áldástól, puszi: Aranka néni</div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-image"><img class="profile-image" src="resources/products/divination.jpg" alt=""></div>
+                        <div class="comment-content">
+                            <div class="commenter-name">Troll Tibor</div>
+                            <div class="comment-text">Elátkoztam a kormányt, kíváncsian várom az eredményeket. Edit: A kormány továbbra is hatalmon, de a főnökömet kirúgták, szerintem működik.</div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div  class="comment-image"><img class="profile-image" src="resources/products/divination.jpg" alt=""></div>
+                        <div class="comment-content">
+                            <div class="commenter-name">Nostradamus</div>
+                            <div class="comment-text">Bejövősek a próféciák, minden hónapban veszek egyet.</div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
         </div>
     </div>
-    
+    <script src="navigation.js"></script>
 </body>
 
 </html>
