@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Varázsdoboz</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="shop.css">
 </head>
 
 <body>
@@ -25,19 +26,112 @@
             <div id="main-content">
                 <div class="main-container main-left">
                     <h2>Termékek</h2>
+                    <div class="item">
+                        <table id="product-table" cellspacing="0" cellpadding="0">
+                            <tr class="product-container">
+                                <td><div class="item-image"><img class="picture" src="resources/products/divination.jpg" alt=""></div></td>
+                                <td>
+                                    <div class="item-details">
+                                        <div class="item-name">Prófécia</div>
+                                        <div class="item-desc">Pontos és fontos jóslatok a legjobb médiumoktól.</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="price">1</span>
+                                    <span class="metric">álom</span>
+                                </td>
+                                <td><button class="add-item-button">Kosárba</button></td>
+                            </tr>
+                            <tr class="product-container">
+                                <td><div class="item-image"><img class="picture" src="resources/products/divination.jpg" alt=""></div></td>
+                                <td>
+                                    <div class="item-details">
+                                        <div class="item-name">Kis rontás</div>
+                                        <div class="item-desc">Célzott alacsony hatásfokú rontás, hogy ellenségeit balszerencse sújtsa.</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="price">1</span>
+                                    <span class="metric">titok</span>
+                                </td>
+                                <td><button class="add-item-button">Kosárba</button></td>
+                            </tr>
+                            <tr class="product-container">
+                                <td><div class="item-image"><img class="picture" src="resources/products/divination.jpg" alt=""></div></td>
+                                <td>
+                                    <div class="item-details">
+                                        <div class="item-name">Rontás</div>
+                                        <div class="item-desc">Célzott rontás, hogy ellenségeit garantáltan balszerencse sújtsa.</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="price">3</span>
+                                    <span class="metric">titok</span>
+                                </td>
+                                <td><button class="add-item-button">Kosárba</button></td>
+                            </tr>
+                            <tr class="product-container">
+                                <td><div class="item-image"><img class="picture" src="resources/products/divination.jpg" alt=""></div></td>
+                                <td>
+                                    <div class="item-details">
+                                        <div class="item-name">Átok</div>
+                                        <div class="item-desc">Konkrét rossz előidézése egy ellenség életében.</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="price">2</span>
+                                    <span class="metric">lélek</span>
+                                </td>
+                                <td><button class="add-item-button">Kosárba</button></td>
+                            </tr>
+                            <tr class="product-container">
+                                <td><div class="item-image"><img class="picture" src="resources/products/divination.jpg" alt=""></div></td>
+                                <td>
+                                    <div class="item-details">
+                                        <div class="item-name">Áldás</div>
+                                        <div class="item-desc">Célzott áldás küldése, hogy szeretteinek a jövőben jó szerencséje legyen.</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="price">1</span>
+                                    <span class="metric">lélek</span>
+                                </td>
+                                <td><button class="add-item-button">Kosárba</button></td>
+                            </tr>
+                        </table>
+                    </div>
                     
                     
                 </div>
                 <div class="main-container main-right">
                     <h2>Kosár</h2>
-                    <div>Vinum regnum, rex vinorum.VVinum regnum, rex vinorum.inum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</div>
-                    <div>Vinum regnum, rex vinorum.VVinum regnum, rex vinorum.inum regnum, rex vinorum.Vinum regnum, rex vinorum.Vinum regnum, rex vinorum.</div>
+                    <table id="cart-table">
+                        <tr>
+                            <th>Termék</th>
+                            <th>Mennyiség</th>
+                            <th>Fizetendő</th>
+                        </tr>
+                        <tr>
+                            <td>Szervizdíj</td>
+                            <td>1</td>
+                            <td>1 emlék</td>
+                        </tr> 
+                    </table>
+                    <div class="purchase-container"><button id="purchase-button" onclick="openPopup()" disabled>Vásárlás</button></div>
                     
                 </div>
             </div>
         </div>
     </div>
+    <div id="popup" class="popup popup-inactive">
+        <h3>Sikeres vásárlás</h3>
+        <div>A fizetségért eljövünk, amikor a legkevésbé számít rá.</div>
+        <div><div id="price-summary"></div></div>
+        <button id="off-popup-button" onclick="closePopup()">Megértettem</button>
+    </div>
+    <div id="shader" class="shader shader-inactive"></div>
     <script src="navigation.js"></script>
+    <script src="shop.js"></script>
     
 </body>
 

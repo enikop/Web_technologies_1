@@ -3,7 +3,6 @@ function clickHome(){
 }
 
 function clickShop(){
-    console.log("futok")
     location.href = "shop.html"
 }
 
