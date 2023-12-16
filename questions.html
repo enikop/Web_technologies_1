@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varázsdoboz</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .main-container .left-title {
+            position: absolute;
+            top: -1.75em;
+            display: inline;
+            text-align: left;
+            width: 100%;
+            transform: none;
+        }
+        .question{
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--vibrant-green);
+        }
+        .answer{
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        a:link{
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--mid-text);
+        }
+        a:hover{
+            letter-spacing: 1pt;
+            color: var(--accent-green);
+        }
+        a:active{
+            text-decoration: none;
+            color: var(--accent-green);
+        }
+        a:visited{
+            text-decoration: none;
+            color: var(--vibrant-green);
+        }
+        .employee-list{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .employee{
+            width: fit-content;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        .employee div:first-child{
+            font-weight: bold;
+            margin-bottom: 0.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inline-container">
+        <div id="sidebar">
+            <h1 style="margin-top: 5rem; margin-bottom: -5.3rem; color: var(--vibrant-green); z-index: 1;">Varázs-</h1>
+            <h1 style="margin-bottom: 0; z-index: 0;">doboz</h1>
+            <h3 style="font-size: 1.2rem;font-weight: normal;">Okkult vegyesbolt, átok kiskereskedés</h3>
+            <div id="menu">
+                <button class="menu-item" onclick="clickHome()">Főoldal</button>
+                <button class="menu-item" onclick="clickShop()">Bolt</button>
+                <button class="menu-item" onclick="clickSeance()">Szeánsz</button>
+                <button class="menu-item" onclick="clickDivination()">Jóslat</button>
+                <button class="menu-item menu-active">Kérdések</button>
+            </div>
+        </div>
+        <div id="main">
+            <div id="main-content">
+                <div class="main-container main-whole">
+                    <h2>Az üzletről</h2>
+                    <div>
+                        <div class="question">Személyesen hol tudok vásárolni?</div>
+                        <div class="answer">Budapesten és Miskolcon vannak üzeleteink, azonban mindkét helyen előzetes időpontfoglalás szükséges a vásárláshoz.</div>
+                        <div class="question">Honnan tudjam, hogy a Varázsdoboz nem átverés?</div>
+                        <div class="answer">Higgyen benne! A hit a mindennapok fontos eleme. Ha az állami média híreit elhiszi, a Varázsdoboz integritásában se kételkedjen! Ha az állami média híreiben kételkedik, akkor fektesse fennmaradó bizalmát a Varázsdobozba! Olvassa el korábbi ügyfeleink <a href="index.html">véleményét</a>, s emlékezzen: aki nem hisz a varázslatban, azt könnyen megtalálják az átkok.</div>
+                        <div class="question">Az inkvizíciótól vagyok, személyes találkozásra van lehetőség?</div>
+                        <div class="answer">Van, előre egyeztetett időpontban. Kérjük, keresse fel kollégáinkat e-mailben (<i>varazsdoboz@magic-mail.com</i>)!</div>
+                    </div>
+                </div>
+                <div class="main-container main-whole">
+                    <h2 class="left-title">Munkatársaink</h2>
+                    <div>
+                        <div class="question">Kik dolgoznak a Varázsdoboznál?</div>
+                        <div class="answer">Munkatársaink közé számos nemzetközi hírű médium, kártyaolvasó, orákulum, kuruzsló és gyakorló boszorkány tartozik. A divíziók vezetői:</div>
+                        <div class="employee-list">
+                            <div class="employee">
+                                <div>Arcana Cassandra</div>
+                                <div>Életvonal díjas tenyérjós</div>
+                                <div>jövő divízió</div>
+                            </div>
+                            <div class="employee">
+                                <div>Atalah Thriae Mysterio</div>
+                                <div>okleveles kísértetszakértő</div>
+                                <div>múlt divízió</div>
+                            </div>
+                            <div class="employee">
+                                <div>Bába Jagoda</div>
+                                <div>világhírű boszorkány</div>
+                                <div>rontás divízió</div>
+                            </div>
+                            <div class="employee">
+                                <div>Kovács Béláné Folt Irén</div>
+                                <div>rásonysápberencsi nyugdíjas</div>
+                                <div>adminisztrációs divízió</div>
+                            </div>
+                        </div>
+                        <div class="question">A Varázsdoboz munkatársai sátánisták?</div>
+                        <div class="answer">Nem mind.</div>
+                    </div>
+                </div>
+                <div class="main-container main-whole">
+                    <h2>Szeánszok</h2>
+                    <div>
+                        <div class="question">Hol találom a következő szeánszok időpontjait?</div>
+                        <div class="answer">A szeánszok pontos időpontját munkatársaink a szellemekkel egyeztetve határozzák meg minden hónap első napján. Havonta az érdeklődéstől függően 2-10 szeánsz kerül megrendezésre, az időpontok többsége éjszakai.</div>
+                        <div class="question">Hogyan tudok szeánszra jelentkezni?</div>
+                        <div class="answer">Amennyiben szeánszon szeretne részt venni, feltétlenül töltse ki a <a href="seance.html">Szeánsz</a> menüpont alatt található űrlapot, a generált meghívót pedig papíron vagy elektronikus formában hozza magával a szeánszra. A konkrét időpontra jelentkezés minden hónap első hetében történik a Varázsdoboz Facebook oldalán keresztül.</div>
+                        <div class="question">Honnan értesülhetek a szeánszok helyéről?</div>
+                        <div class="answer">A Varázsdoboz <a href="https://www.facebook.com/">Facebook</a> oldalán keresztül, de e-mailben is lehet érdeklődni (<i>varazsdoboz@magic-mail.com</i>).</div>
+                    </div>
+                </div>
+                <div class="main-container main-whole">
+                    <h2 class="left-title">Szolgáltatások</h2>
+                    <div>
+                        <div class="question">Hogyan és mikor kerül levonásra a megvásárolt szolgáltatások ára?</div>
+                        <div class="answer">Ahogy és amikor a legkevésbé számít rá.</div>
+                        <div class="question">Mennyi idő, amíg az átok/rontás/áldás hatni kezd?</div>
+                        <div class="answer">A mágia útjai kifürkészhetetlenek, van, hogy a hatás azonnali, de van, hogy heteket kell rá várni. A varázslatokkal szemben türelemmel kell lenni.</div>
+                        <div class="question">Ha hónap végéig nem tapasztalok hatást, hogyan kezdeményezhetek visszatérítést?</div>
+                        <div class="answer">A fizetség tűnékeny természetéből fakadóan sajnos visszatérítésre nincs lehetőség. Ha ilyen történne, feltétlenül kérjen konzultációs időpontot egyik munkatársunktól, aki segíthet Önnek felderíteni a késlekedés okait.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="navigation.js"></script>
+
+</body>
+
+</html>

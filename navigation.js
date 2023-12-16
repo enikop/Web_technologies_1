@@ -14,7 +14,7 @@ function clickDivination(){
     location.href = "divination.html"
 }
 
-function clickColleagues(){
-    location.href = "shop.html"
+function clickQuestions(){
+    location.href = "questions.html"
 
 }
