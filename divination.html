@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varázsdoboz</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="divination.css">
 </head>
 
 <body>
@@ -25,12 +26,26 @@
         <div id="main">
             <div id="main-content">
                 <div class="main-container main-whole">
-                    <h2>Jelentkezés</h2>
+                    <h2>Útmutató</h2>
+                    <div id="how-to">
+                        <ol>
+                            <li>Gondoljon egy személyre!</li>
+                            <li>Gondoljon egy helyre!</li>
+                            <li>Kapja el a galaktikus vándor macskát!</li>
+                            <li>Olvassa el a jóslatot az <i>(1)</i> szimbólum helyére a személyt, <i>(2)</i> szimbólum helyére a helyet beillesztve!</li>
+                        </ol>
+                    </div>
+                    <div class="container">
+                        <div class="ball"></div>
+                    </div>
                     
                 </div>
                 <div class="main-container main-whole">
-                    <h2>Meghívó</h2>
-
+                    <h2>Jóslat</h2>
+                    <button id="start-divination-button">Jóslás megkezdése</button>
+                    <div id="divination-area">
+                        <img class="cat" src="resources/Cat.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,7 +54,7 @@
     <script src="navigation.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="seance.js"></script>
+    <script src="divination.js"></script>
 
 
 </body>

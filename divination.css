@@ -1,0 +1,159 @@
+html,
+body {
+    --muted-dark-blue: #102B30;
+    --dark-blue: #102131;
+    --rich-blue: #073f50;
+    --mid-blue: #143e54;
+    --green-accent: #127870;
+    --vibrant-green: #19A69A;
+    --dark-green: #0D544E;
+    --dark-cyan: #06424c;
+    --light-text: #b9cbd5;
+    --mid-text: #66bbb4;
+    --peachy: #F7CCA1
+}
+
+#how-to ol {
+    list-style-type: decimal-leading-zero;
+}
+
+#how-to ol li {
+    font-size: 1.3rem;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+li:before {
+    content: '';
+    display: block;
+    height: 0px;
+    width: 100%;
+    margin-bottom: 3px;
+    border-image: linear-gradient(to right, var(--mid-text), var(--dark-blue)) 30;
+    border-bottom: 1px solid;
+}
+
+#start-divination-button {
+    width: 50%;
+    background-color: var(--vibrant-green);
+    color: var(--dark-blue);
+    margin: 1rem 25%;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    box-sizing: content-box;
+    border-radius: 0.5rem;
+}
+
+#start-divination-button:hover {
+    background: var(--dark-green);
+    color: var(--mid-text);
+    cursor: pointer;
+}
+
+.ball {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--green-accent);
+    animation: bounce 1s infinite alternate;
+    display: none;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(-4rem);
+    }
+
+    to {
+        transform: translateY(-10rem);
+    }
+}
+
+#divination-area {
+    width: 100%;
+    height: 350px;
+    display: none;
+    transition: all 5s;
+}
+
+.cat {
+    height: 100px;
+    animation-name: hor-movement, ver-movement;
+    animation-duration: 5s, 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transform: translateX(-113px);
+}
+
+.cat:hover{
+    cursor: pointer;
+}
+
+.caught{
+    height: 100px;
+    animation-name: hor-back, ver-back;
+    animation-duration: 2s, 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    margin-left: 100%;
+    transform: translateX(-113px);
+}
+.divination-title{
+    color: var(--mid-text);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    margin: 0 1rem;
+    margin-top: -2rem;
+}
+.divination-text{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+@keyframes hor-back {
+    from {
+        margin-left: var(--cur-left);
+    }
+
+    to {
+        margin-left: 100%;
+    }
+}
+
+@keyframes ver-back {
+    from {
+        margin-top: var(--cur-top);
+    }
+
+    to {
+        margin-top: 0;
+    }
+}
+
+@keyframes hor-movement {
+    from {
+        margin-left: 113px;
+    }
+
+    to {
+        margin-left: 100%;
+    }
+}
+
+@keyframes ver-movement {
+    from {
+        margin-top: 0%;
+    }
+
+    to {
+        margin-top: 250px;
+    }
+}
