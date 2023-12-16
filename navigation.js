@@ -11,7 +11,7 @@ function clickSeance(){
 }
 
 function clickDivination(){
-    location.href = "shop.html"
+    location.href = "divination.html"
 }
 
 function clickColleagues(){
