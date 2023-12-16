@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varázsdoboz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /*Reset defaults because Bootstrap changes them*/
+        h1 {
+            display: block;
+            margin-top: 0.67em;
+            margin-bottom: 0.67em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            line-height: normal;
+        }
+
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-top: 0.83em;
+            margin-bottom: 0.83em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            line-height: normal;
+        }
+
+        h3 {
+            display: block;
+            font-size: 1.17em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            line-height: normal;
+        }
+
+        button {
+            line-height: normal;
+        }
+        #invitation-button{
+            width: 50%;
+            background-color: var(--vibrant-green);
+            color: var(--dark-blue);
+            margin: auto;
+            padding: 5px;
+            font-size: 1.1rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight:bold;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            box-sizing: content-box;
+            border-radius: 0.5rem;
+        }
+        #invitation-button:hover {
+            background: var(--dark-green);
+            color: var(--mid-text);
+            cursor:pointer;
+        }
+        #invitation{
+            display: flex;
+            margin: 1rem 0;
+        }
+        canvas{
+            max-width: 100%;
+            margin: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        form{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inline-container">
+        <div id="sidebar">
+            <h1 style="margin-top: 5rem; margin-bottom: -5.3rem; color: var(--vibrant-green); z-index: 1;">Varázs-</h1>
+            <h1 style="margin-bottom: 0; z-index: 0;">doboz</h1>
+            <h3 style="font-size: 1.2rem;font-weight: normal;">Okkult vegyesbolt, átok kiskereskedés</h3>
+            <div id="menu">
+                <button class="menu-item" onclick="clickHome()">Főoldal</button>
+                <button class="menu-item" onclick="clickShop()">Bolt</button>
+                <button class="menu-item menu-active">Szeánsz</button>
+                <button class="menu-item" onclick="clickDivination()">Jóslat</button>
+                <button class="menu-item" onclick="clickColleagues()">Munkatársak</button>
+            </div>
+        </div>
+        <div id="main">
+            <div id="main-content">
+                <div class="main-container main-whole">
+                    <h2>Jelentkezés</h2>
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-md-7">
+                                <label for="nameInput">Név</label>
+                                <input type="text" class="form-control" id="nameInput">
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="birthdayInput">Születésnap</label>
+                                <input type="date" class="form-control" id="birthdayInput" min="1900-01-01"
+                                    max="2005-01-01" value="1990-01-01">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                                <label for="seanceTypeInput" class="col-form-label">Szeánsz típusa</legend>
+                                    <select class="form-control" id="seanceTypeInput">
+                                        <option>Szellemidézés</option>
+                                        <option>Alku alvilági lényekkel</option>
+                                        <option>Vudu szertartás</option>
+                                        <option>Tarot olvasás</option>
+                                        <option>Egyéb</option>
+                                    </select>
+                            </div>
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="hairColorPicker" class="form-label">Hajszín</label>
+                                <input type="color" id="hairColorPicker" name="hairColorPicker" class="form-control"
+                                    value="#ff0000">
+                            </div>
+                            <div class="form-group col">
+                                <label for="eyeColorPicker" class="form-label">Szemszín</label>
+                                <input type="color" id="eyeColorPicker" name="eyeColorPicker" class="form-control"
+                                    value="#0000ff">
+                            </div>
+                            <div class="form-group col">
+                                <label for="skinColorPicker" class="form-label">Bőrszín</label>
+                                <input type="color" id="skinColorPicker" name="skinColorPicker" class="form-control"
+                                    value="#ffff00">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="motivationInput" class="col-form-label">Motiváció</legend>
+                            <textarea class="form-control" id="motivationInput" rows="3"></textarea>
+                        </div>
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-2 pt-0">Hajhossz</legend>
+                                <div class="col-sm-10">
+                                    <div class="row">
+                                    <div class="form-check col-md-2">
+                                        <input class="form-check-input" type="radio" name="hairLength"
+                                            id="hairLengthShort" value="short" checked>
+                                        <label class="form-check-label" for="hairLengthShort">rövid</label>
+                                    </div>
+                                    <div class="form-check col-md-2">
+                                        <input class="form-check-input" type="radio" name="hairLength"
+                                            id="hairLengthMid" value="mid">
+                                        <label class="form-check-label" for="hairLengthMid">félhosszú</label>
+                                    </div>
+                                    <div class="form-check disabled col-md-2">
+                                        <input class="form-check-input" type="radio" name="hairLength"
+                                            id="hairLengthlong" value="long">
+                                        <label class="form-check-label" for="hairLengthlong">hosszú</label>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-check pt-2">
+                            <input class="form-check-input" type="checkbox" value="" id="acceptCheck">
+                            <label class="form-check-label" for="acceptCheck">Az általános szerződési feltételeket megismertem, megértettem és elfogadom.</label>
+                        </div>
+                        <div class="form-group row pt-3">
+                            <button id="invitation-button" class="">Meghívó generálása</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="main-container main-whole">
+                    <h2>Meghívó</h2>
+                    <div id="invitation"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="navigation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="seance.js"></script>
+
+
+</body>
+
+</html>

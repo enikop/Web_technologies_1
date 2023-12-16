@@ -1,16 +1,9 @@
-.main-whole{
-    width: 100%;
-}
-.main-half{
-    width: 43%;
-}
-
 .about-image{
     width: 140px;
     float: left;
     margin-right: 1rem;
     margin-top: 0.5rem;
-    border-right: 0.5rem solid var(--green-accent);
+    border-right: 0.75rem solid var(--green-accent);
 }
 
 #product-container{

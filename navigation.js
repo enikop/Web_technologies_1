@@ -7,7 +7,7 @@ function clickShop(){
 }
 
 function clickSeance(){
-    location.href = "shop.html"
+    location.href = "seance.html"
 }
 
 function clickDivination(){
