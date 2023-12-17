@@ -21,6 +21,7 @@ $(document).ready(function () {
         invitationInfo.hairLength = $("input[name='hairLength']:checked").val();
         invitationInfo.acceptCheck = $("#acceptCheck").is(":checked");
 
+        console.log(invitationInfo.birthday);
         //Validate form input and make invitation
         if(!validateInput()){
             return;
@@ -43,17 +44,23 @@ function validateInput(){
         $("#name-error").hide();
         $("#nameInput").removeClass("is-invalid");
     }
-
-    birthDate = new Date(Date.parse(invitationInfo.birthday));
-    today = new Date();
-    birthDate.setFullYear(birthDate.getFullYear()+18);
-    if( today < birthDate){
-        $("#birthday-error").show();
+    if(invitationInfo.birthday == "" || invitationInfo.birthday === null){
+        $("#date-error").show();
         $("#birthdayInput").addClass("is-invalid");
         valid = false;
-    } else{
-        $("#birthdayInput").removeClass("is-invalid");
-        $("#birthday-error").hide();
+    } else {
+        $("#date-error").hide();
+        birthDate = new Date(Date.parse(invitationInfo.birthday));
+        today = new Date();
+        birthDate.setFullYear(birthDate.getFullYear() + 18);
+        if (today < birthDate) {
+            $("#birthday-error").show();
+            $("#birthdayInput").addClass("is-invalid");
+            valid = false;
+        } else {
+            $("#birthdayInput").removeClass("is-invalid");
+            $("#birthday-error").hide();
+        }
     }
 
     if(invitationInfo.motivation.length < 10 || invitationInfo.motivation === null){
