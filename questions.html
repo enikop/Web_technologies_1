@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varázsdoboz</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         .main-container .left-title {
             position: absolute;
@@ -74,7 +75,9 @@
                 <button class="menu-item" onclick="clickSeance()">Szeánsz</button>
                 <button class="menu-item" onclick="clickDivination()">Jóslat</button>
                 <button class="menu-item menu-active">Kérdések</button>
+                <button class="menu-item mobile-menu-item" onclick="closeMobileMenu()">Bezárás</button>
             </div>
+            <div id="mobile-menu"><button class="menu-item mobile-menu-button" onclick="openMobileMenu()"><i class="material-icons notranslate">menu</i></button></div>
         </div>
         <div id="main">
             <div id="main-content">

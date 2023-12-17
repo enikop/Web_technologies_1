@@ -1,8 +1,8 @@
 let divinations = [
-    "<i>(1)</i> el fogja önt árulni. Ne szakítsa meg a kapcsolatukat, a megbocsátás mindkettejüket fel fogja szabadítani. A következő hónapban jobban teszi, ha kerüli <i>(2)</i>-t!",
-    "A jövőjébe nagy vagyon lehetősége van írva, de ha <i>(1)</i> közelében marad, nincstelenül hal meg. <i>(2)</i> fontos hely lesz az életében.",
-    "Ha kikapcsolódásra vágyik, <i>(2)</i> jó hely lehet erre, de ne maradjon sokáig! <i>(1)</i> hamarosan a segítségére fog szorulni.",
-    "Ha nem dönt elhamarkodottan, <i>(1)</i> örökké hűséges társa maradhat. Egy közeli családtagjára veszély leselkedik, intse őt óva <i>(2)</i> meglátogatásától!"
+    "<i>(a)</i> el fogja önt árulni. Ne szakítsa meg a kapcsolatukat, a megbocsátás mindkettejüket fel fogja szabadítani. A következő hónapban jobban teszi, ha kerüli <i>(b)</i>-t!",
+    "A jövőjébe nagy vagyon lehetősége van írva, de ha <i>(a)</i> közelében marad, nincstelenül hal meg. <i>(b)</i> fontos hely lesz az életében.",
+    "Ha kikapcsolódásra vágyik, <i>(b)</i> jó hely lehet erre, de ne maradjon sokáig! <i>(a)</i> hamarosan a segítségére fog szorulni.",
+    "Ha nem dönt elhamarkodottan, <i>(a)</i> örökké hűséges társa maradhat. Egy közeli családtagjára veszély leselkedik, intse őt óva <i>(b)</i> meglátogatásától!"
 ]
 $(document).ready(function () {
     $("#start-divination-button").click(function (e) {

@@ -18,3 +18,11 @@ function clickQuestions(){
     location.href = "questions.html"
 
 }
+
+function openMobileMenu(){
+    document.getElementById("menu").style.transform = "translate(-50%, 0)";
+}
+
+function closeMobileMenu(){
+    document.getElementById("menu").style.transform = "translate(-50%, 100%)";
+}
