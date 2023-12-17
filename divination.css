@@ -95,6 +95,14 @@ li:before {
     font-size: 1.5rem;
     margin: 1rem;
 }
+@media (max-width: 512px) {
+    .divination-title{
+        font-size: 1.5rem;
+    }
+    .divination-text{
+        font-size: 1.2rem;
+    }
+}
 
 @keyframes bounce {
     from {

@@ -11,13 +11,12 @@ $(document).ready(function () {
         $("li").animate({ marginLeft: "4.2rem" }, 1000);
         $(".ball").fadeIn("slow", function () { });
     });
-    $(".cat").click(function (e) {
+    $(".cat").one("click", function (e) {
         $(this).css("--cur-left", $(this).css("margin-left"));
         $(this).css("--cur-top", $(this).css("margin-top"));
         $(this).addClass("caught");
         $(this).removeClass("cat");
         $("#divination-area").append($("<div class='divination-title'>Az Ön jóslata:</div><div class='divination-text'>" + divinations[Math.floor(Math.random() * divinations.length)] + "</div>"));
-        //$('#divination-area').css("height", "fit-content");
         setTimeout(function () {
             var el = $('#divination-area');
             curHeight = el.height();

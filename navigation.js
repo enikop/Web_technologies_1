@@ -20,9 +20,11 @@ function clickQuestions(){
 }
 
 function openMobileMenu(){
-    document.getElementById("menu").style.transform = "translate(-50%, 0)";
+    document.getElementById("menu").style.setProperty("--xtrans", "-50%");
+    document.getElementById("menu").style.setProperty("--ytrans", "0");
 }
 
 function closeMobileMenu(){
-    document.getElementById("menu").style.transform = "translate(-50%, 100%)";
+    document.getElementById("menu").style.setProperty("--xtrans", "-50%");
+    document.getElementById("menu").style.setProperty("--ytrans", "100%");
 }

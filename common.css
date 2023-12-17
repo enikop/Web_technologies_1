@@ -63,6 +63,8 @@ h1{
     display: none;
 }
 #menu{
+    --xtrans: 0;
+    --ytrans: 0;
     position:absolute;
     bottom: 3rem;
 }
@@ -160,14 +162,16 @@ h1{
         background-repeat: repeat;
     }
     #menu{
+        --xtrans: -50%;
+        --ytrans: 100%;
         position: fixed;
-        transition: transform 1s cubic-bezier(0.5, 0.5, 0.29, 0.98);
+        transition: transform   0.5s cubic-bezier(0.5, 0.5, 0.29, 0.98);
         z-index: 4;
         left: 50%;
         bottom: 0;
         width: fit-content;
         height: fit-content;
-        transform: translate(-50%, 100%);
+        transform: translate(var(--xtrans), var(--ytrans));
         background-color: var(--dark-blue);
         padding-bottom: 1rem;
     }
@@ -199,6 +203,13 @@ h1{
     }
     .radio-button{
         margin-left: 2rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    #menu{
+        --xtrans: 0;
+        --ytrans: 0;
     }
 }
 
