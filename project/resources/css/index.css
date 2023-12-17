@@ -63,6 +63,7 @@
 .product-card:hover{
     background-color: var(--vibrant-green);
     color: var(--mid-blue);
+    cursor: pointer;
 }
 
 .product-card:hover .product-name{

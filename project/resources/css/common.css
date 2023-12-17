@@ -45,7 +45,7 @@ html, body{
     height: 100%;
     overflow-y: auto;
     background-color: var(--dark-blue);
-    background-image: url(resources/background.jpg);
+    background-image: url(../media/background.jpg);
     background-size: cover;
     min-height: fit-content;
     padding: 2% 5%;

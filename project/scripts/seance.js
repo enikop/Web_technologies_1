@@ -2,7 +2,7 @@ let invitationInfo = {};
 const CANVAS_WIDTH = 500;
 const CANVAS_HEIGHT = 300;
 const PERSON_START_POS = { "x": 110, "y": 100 };
-const BACKGROUND_IMAGE = "resources/background.jpg";
+const BACKGROUND_IMAGE = "resources/media/background.jpg";
 
 $(document).ready(function () {
 
