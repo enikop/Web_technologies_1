@@ -9,5 +9,5 @@
 
 HTML: [/project](/project) \
 CSS: [/project/resources/css](/project/resources/css) \
-JavaScript: [/project/resources/js](/project/scripts) 
+JavaScript: [/project/scripts](/project/scripts) 
 
