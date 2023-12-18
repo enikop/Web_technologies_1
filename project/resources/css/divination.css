@@ -109,7 +109,6 @@ li:before {
     from {
         transform: translateY(-4rem);
     }
-
     to {
         transform: translateY(-10rem);
     }
@@ -119,7 +118,6 @@ li:before {
     from {
         margin-left: 113px;
     }
-
     to {
         margin-left: 100%;
     }
@@ -129,7 +127,6 @@ li:before {
     from {
         margin-top: 0%;
     }
-
     to {
         margin-top: 250px;
     }
@@ -139,7 +136,6 @@ li:before {
     from {
         margin-left: var(--cur-left);
     }
-
     to {
         margin-left: 100%;
     }
@@ -149,7 +145,6 @@ li:before {
     from {
         margin-top: var(--cur-top);
     }
-
     to {
         margin-top: 0;
     }

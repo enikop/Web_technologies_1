@@ -6,15 +6,12 @@ html, body{
     font-family: 'Times New Roman', Times, serif;
     --muted-dark-blue: #102B30;
     --dark-blue: #102131;
-    --rich-blue: #073f50;
     --mid-blue: #143e54;
     --green-accent: #127870;
     --vibrant-green: #19A69A;
     --dark-green: #0D544E;
-    --dark-cyan: #06424c;
     --light-text: #b9cbd5;
     --mid-text: #66bbb4;
-    --peachy: #F7CCA1
 }
 .inline-container {
     width: 100%;

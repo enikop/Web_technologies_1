@@ -1,5 +1,4 @@
 let products = document.getElementsByClassName("product-container");
-console.log(products.length);
 let cart = [];
 
 Array.from(products).forEach(element => {

@@ -21,7 +21,6 @@ $(document).ready(function () {
         invitationInfo.hairLength = $("input[name='hairLength']:checked").val();
         invitationInfo.acceptCheck = $("#acceptCheck").is(":checked");
 
-        console.log(invitationInfo.birthday);
         //Validate form input and make invitation
         if(!validateInput()){
             return;
